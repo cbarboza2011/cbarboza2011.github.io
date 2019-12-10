@@ -70,7 +70,7 @@ body {
   flex-grow: 1;
 }
 
-.nav-links a {
+.nav-link {
   width: 100%;
   text-align: center;
   font-size: 30px;
@@ -85,7 +85,7 @@ body {
   text-shadow: 1px 1px 2px #676671;
 }
 
-.nav-links a:hover {
+.nav-link:hover {
   background: #c6c5c9;
   color: #42404e;
   text-shadow: 1px 1px 2px #a09fa6;
@@ -94,33 +94,20 @@ body {
 .social {
   margin: 30px auto 15px;
   width: 50%;
+  font-family: arial;
 }
+
+.social a:hover {
+  opacity: 0.3;
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 50px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-twitter {
-  background: #55ACEE;
-  color: white;
-}
-
-.fa-linkedin {
-  background: #007bb5;
-  color: white;
-}
-
-.fa-instagram {
-  background: #125688;
+  background: transparent;
   color: white;
 }
 
@@ -138,13 +125,13 @@ body {
   width: 100%;
   min-height: 100vh;
   color: #ecebed;
-  text-shadow: 2px 2px 2px #42404e;
+  text-shadow: 3px 3px 6px #42404e;
   padding: 0 10%;
 }
 
 .section:not(#main) {
   background: rgba(255,255,255,0.3);
-  padding: 5%;
+  padding: 10%;
   justify-content: space-between;
 }
 
@@ -154,9 +141,10 @@ h1 {
 }
 
 h2 {
-  font-size: 5vh;
+  font-size: 5.5vh;
   font-family: 'Podkova', serif;
   text-align: center;
+  text-shadow: 2px 2px 4px #42404e;
 }
 
 h3 {
@@ -175,6 +163,10 @@ p {
   text-indent: 5%;
   text-shadow: 2px 2px 2px #ecebed;
   color: #42404e;
+}
+
+#portfolio {
+  padding: 5%;
 }
 
 .grid {
@@ -216,6 +208,7 @@ p {
 .grid-box-text:hover {
   color: #42404e;
   text-shadow: 2px 2px 2px #27262e;
+  background: rgba(255,255,255,0.3);
 }
 
 .one {

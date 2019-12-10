@@ -133,7 +133,7 @@ body {
   min-height: 100vh;
   color: #ecebed;
   text-shadow: 3px 3px 6px #42404e;
-  padding: 0 10%;
+  padding: 0 10%;subheader
 }
 
 .section:not(#main) {
@@ -323,7 +323,7 @@ p {
   border-bottom: 1px solid #ecebed;
 }
 
-.location {
+.subheader3 {
   font-size: 4vh;
   line-height: 7vh;
   text-shadow: inherit;
@@ -405,4 +405,48 @@ p {
 .exit:hover {
   opacity: .5;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .headshot {
+    width: 50%;
+    padding: 5%;
+  }
+
+  .headshot img {
+    width: 100%;
+  }
+
+  .navigation {
+    height: auto;
+    flex-direction: row;
+  }
+
+  .fa {
+    padding: 2px 4px;
+    font-size: 4vh
+  }
+
+  .nav-link {
+    font-size: 3vh;
+  }
+
+  .nav-link.email {
+    flex-grow: 0;
+    padding: 1vh 0;
+    font-size: 2vh;
+  }
+
+  .grid-box.graphic, .grid a {
+    width: 49%;
+  }
+
+  .photo-column img {
+    opacity: 1;
+  }
 }

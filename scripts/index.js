@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
   });
   $('.grid-box.graphic').on('click', function() {
-    var $imgUrl = $(this).css('background-image').replace('url("', '');
+    var $imgUrl = $(this).css('background-image').replace('url("', '').replace('")', '');
     console.log($imgUrl);
     $('.big-photo').show();
     $('.enlarged').attr('src', $imgUrl);

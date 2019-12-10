@@ -449,4 +449,11 @@ p {
   .photo-column img {
     opacity: 1;
   }
+
+  .exit {
+    bottom: 5vh;
+    left: 50%;
+    top: auto;
+    right: auto;
+  }
 }

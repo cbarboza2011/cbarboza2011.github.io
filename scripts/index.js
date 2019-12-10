@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
   });
   $('.grid-box.graphic').on('click', function() {
-    var $imgUrl = $(this).css('background-image').replace('url("file:///C:/Users/Cristiana/Desktop/cbarboza2011.github.io/', '').replace('")', '');
+    var $imgUrl = $(this).css('background-image').replace('url("', '');
     console.log($imgUrl);
     $('.big-photo').show();
     $('.enlarged').attr('src', $imgUrl);

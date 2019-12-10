@@ -1,0 +1,231 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+  display: flex;
+	flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+	flex-direction: column;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navigation {
+  min-width: 25vw;
+  height: 100vh;
+  background: #42404e;
+  border-right: 1px solid #c6c5c9;
+}
+
+.headshot {
+  width: 100%;
+  padding: 10% 0;
+}
+
+.headshot img {
+  width: 50%;
+  border: 1px solid #c6c5c9;
+  border-radius: 100%;
+  box-shadow: 1px 1px 2px #676671;
+}
+
+.nav-links {
+  flex-grow: 1;
+}
+
+.nav-links a {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #ecebed;
+  text-decoration: none;
+  flex-grow: 1;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 1px 2px #676671;
+}
+
+.nav-links a:hover {
+  background: #c6c5c9;
+  color: #42404e;
+  text-shadow: 1px 1px 2px #a09fa6;
+}
+
+.social {
+  margin: 30px auto 15px;
+  width: 50%;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.photo {
+  background-image: url("../images/fleurs.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  max-height: 100vh;
+  overflow-y: scroll;
+  flex-grow: 1;
+}
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+  color: #ecebed;
+  text-shadow: 2px 2px 2px #42404e;
+  padding: 0 10%;
+}
+
+.section:not(#main) {
+  background: rgba(255,255,255,0.3);
+  padding: 5%;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 20vh;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
+  font-size: 5vh;
+  font-family: 'Podkova', serif;
+  text-align: center;
+}
+
+h3 {
+  font-size: 15vh;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h4 {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 7vh;
+}
+
+p {
+  font-family: 'Podkova', serif;
+  font-size: 24px;
+  text-indent: 5%;
+  text-shadow: 2px 2px 2px #ecebed;
+  color: #42404e;
+}
+
+.grid {
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  flex-grow: 1;
+  margin-top: 5%;
+}
+
+.grid a {
+  display: block;
+  width: 31%;
+  height: 25vh;
+  margin-bottom: 2%;
+}
+
+.grid-box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 8px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 3px 3px 6px #42404e;
+}
+
+.grid-box-text {
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,0.5);
+  border-radius: 8px;
+  justify-content: space-around;
+  padding: 10%;
+  color: #8d8c94;
+  text-shadow: 2px 2px 2px #42404e;
+}
+
+.grid-box-text:hover {
+  color: #42404e;
+  text-shadow: 2px 2px 2px #27262e;
+}
+
+.one {
+  background-image: url("../images/websites/blackjack.png");
+}
+
+.two {
+  background-image: url("../images/websites/chloe.png");
+}
+
+.three {
+  background-image: url("../images/websites/bigpurple.png");
+}

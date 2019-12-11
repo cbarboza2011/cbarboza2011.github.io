@@ -406,7 +406,7 @@ p {
   z-index: 1;
 }
 
-.big-photo img {
+.enlarged {
   display: block;
   margin: 2.5% auto;
   max-width: 90%;
@@ -436,19 +436,12 @@ p {
 }
 
 @media only screen and (max-width: 1000px) {
-  .grid a, .grid-box.graphic{
+  .grid a, .grid-box.graphic {
     width: 49%;
   }
 }
-
 
 @media only screen and (max-width: 800px) {
-  .grid-box.graphic {
-    width: 49%;
-  }
-}
-
-@media only screen and (max-width: 600px) {
 
   .main {
     flex-direction: column;
@@ -502,9 +495,14 @@ p {
     font-size: 3vh;
   }
 
+  .nav-link:hover {
+    background: inherit;
+    color: #ecebed;
+  }
+
   .nav-link.email {
     flex-grow: 0;
-    padding: 2vh 0 3vh;
+    padding: 3vh 0;
     font-size: 3vh;
   }
 
@@ -566,7 +564,7 @@ p {
   }
 
   .grid-box.graphic {
-    width: 49%
+    width: 49%;
   }
 
   .grid-box.graphic h4 {
@@ -577,11 +575,17 @@ p {
     opacity: 1;
   }
 
+  .enlarged {
+    margin: 3vh auto;
+  }
+
   .exit {
-    bottom: 15vh;
-    left: 48%;
+    bottom: 0;
     top: auto;
     right: auto;
+    padding-bottom: 5vh;
+    width:100%;
+    text-align: center;;
   }
 
   .navcontrol {
@@ -596,5 +600,7 @@ p {
     padding: 1vh 0 5vh;
     position: relative;
     top: -1px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
   }
 }

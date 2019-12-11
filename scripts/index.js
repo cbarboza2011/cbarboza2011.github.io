@@ -1,7 +1,4 @@
 $(document).ready(function() {
-  $('.navigation').hide();
-  const $portrait = $('.headshot').detach();
-  $('#main').prepend($portrait);
   $('.photo-column div').on('click', function() {
     var $img = $(this).find('img');
     var $imgUrl = $img.attr('src');
@@ -25,19 +22,29 @@ $(document).ready(function() {
   $('.navcontrol').on('click', function() {
     if ($('.navigation').is(':visible')) {
       $('.navigation').slideToggle();
-      $('.navcontrol').text('☰');
+      $('.navcontrol').text('Menu ☰');
     } else {
       $('.navigation').slideToggle();
       $('.navcontrol').text('×');
     }
   });
 
-  var x = window.matchMedia("(max-width: 700px)");
+  let x = window.matchMedia("(max-width: 800px)");
   checkIfMobile(x) // Call listener function at run time
   x.addListener(checkIfMobile) // Attach listener function on state changes
 
+  $(window).on('orientationchange', function(event) {
+    checkIfMobile(x);
+    if (event.orientation === 'landscape') {
+      $('.navigation').show();
+    }
+  });
+
   function checkIfMobile(x) {
     if (x.matches) { // if mobile
+      $('.navigation').hide();
+      const $portrait = $('.headshot').detach();
+      $('#main').prepend($portrait);
       $('#photography .subheader').text('Click for full screen');
     }
   }

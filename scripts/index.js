@@ -2,7 +2,7 @@ $(document).ready(function() {
   $('.photo-column div').on('click', function() {
     var $img = $(this).find('img');
     var $imgUrl = $img.attr('src');
-    $('.big-photo').show();
+    $('.big-photo').css('display', 'flex');
     $('.enlarged').attr('src', $imgUrl);
     $('.exit').on('click', function() {
       $('.big-photo').hide();

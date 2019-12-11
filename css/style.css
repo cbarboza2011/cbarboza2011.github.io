@@ -445,11 +445,12 @@ p {
 
   .main {
     flex-direction: column;
-    position: relative
+    position: relative;
   }
 
   .nav-container {
-    position: absolute;
+    position: fixed;
+    top: 0;
     align-self: stretch;
     width: 100%;
     z-index: 1;
@@ -534,6 +535,7 @@ p {
 
   .photo {
     background-position: center;
+    overflow-y: auto;
   }
 
   .section:not(#main) h3 {

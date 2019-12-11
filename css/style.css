@@ -482,7 +482,7 @@ p {
   .links {
     display: flex;
     flex-direction: row;
-    justify-content: space-space-between;
+    justify-content: space-between;
   }
 
   .pagination {
@@ -609,7 +609,7 @@ p {
     font-weight: bold;
     padding: 1vh 0 5vh;
     position: sticky;
-    top: -1px;
+    margin-top: -1px;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 2px;
   }

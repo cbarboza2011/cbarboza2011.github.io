@@ -2,6 +2,7 @@ $(document).ready(function() {
   $('.photo-column div').on('click', function() {
     var $img = $(this).find('img');
     var $imgUrl = $img.attr('src');
+    console.log($imgUrl);
     $('.big-photo').show();
     $('.enlarged').attr('src', $imgUrl);
     $('.exit').on('click', function() {
@@ -11,9 +12,8 @@ $(document).ready(function() {
 
   $('.grid-box.graphic').on('click', function() {
     let $imgUrl = $(this).css('background-image');
-    let $position = $imgUrl.indexOf("/images/graphics/");
-    $imgUrl = $imgUrl.substring($position);
-    console.log($position, $imgUrl);
+    let $position = $imgUrl.indexOf("images/graphics/");
+    $imgUrl = $imgUrl.substring($position, $imgUrl.length - 2);
     $('.big-photo').show();
     $('.enlarged').attr('src', $imgUrl);
     $('.exit').on('click', function() {

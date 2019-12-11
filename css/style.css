@@ -535,7 +535,7 @@ p {
 
   .photo {
     background-position: center;
-    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .section:not(#main) h3 {

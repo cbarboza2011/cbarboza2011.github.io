@@ -445,8 +445,9 @@ p {
 
   body {
     background-image: url("../images/fleurs.jpg");
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: center;
     background-size: cover;
   }
 

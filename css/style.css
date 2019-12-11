@@ -459,15 +459,6 @@ p {
   background-size: cover;
 }
 
-  /* body {
-    background-image: url("../images/fleurs.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    max-height: 100vh;
-  } */
-
   .main {
     flex-direction: column;
     position: relative;
@@ -540,7 +531,7 @@ p {
 
   .social a {
     height: 24%;
-    padding-left: 3vh;
+    margin-left: 3vh;
   }
 
   .social a:hover {

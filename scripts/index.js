@@ -10,8 +10,10 @@ $(document).ready(function() {
   });
 
   $('.grid-box.graphic').on('click', function() {
-    var $imgUrl = $(this).css('background-image').replace('url("', '').replace('")', '');
-    console.log($imgUrl);
+    let $imgUrl = $(this).css('background-image');
+    let $position = $imgUrl.indexOf("/images/graphics/");
+    $imgUrl = $imgUrl.substring($position);
+    console.log($position, $imgUrl);
     $('.big-photo').show();
     $('.enlarged').attr('src', $imgUrl);
     $('.exit').on('click', function() {
@@ -32,13 +34,6 @@ $(document).ready(function() {
   let x = window.matchMedia("(max-width: 800px)");
   checkIfMobile(x) // Call listener function at run time
   x.addListener(checkIfMobile) // Attach listener function on state changes
-
-  $(window).on('orientationchange', function(event) {
-    checkIfMobile(x);
-    if (event.orientation === 'landscape') {
-      $('.navigation').show();
-    }
-  });
 
   function checkIfMobile(x) {
     if (x.matches) { // if mobile

@@ -443,6 +443,13 @@ p {
 
 @media only screen and (max-width: 800px) {
 
+  body {
+    background-image: url("../images/fleurs.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+  }
+
   .main {
     flex-direction: column;
     position: relative;
@@ -485,7 +492,6 @@ p {
   .pagination .nav-link {
     justify-content: flex-end;
     padding-right: 3vh;
-
   }
 
   .nav-links {
@@ -534,7 +540,7 @@ p {
   }
 
   .photo {
-    background-position: center;
+    background: transparent;
     overflow-y: inherit;
     -webkit-overflow-scrolling: touch;
   }

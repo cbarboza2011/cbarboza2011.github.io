@@ -445,10 +445,11 @@ p {
 
   body {
     background-image: url("../images/fleurs.jpg");
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 100vh;
   }
 
   .main {

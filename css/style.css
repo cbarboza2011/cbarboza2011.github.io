@@ -600,7 +600,7 @@ p {
     font-size: 4vh;
     font-weight: bold;
     padding: 1vh 0 5vh;
-    position: relative;
+    position: sticky;
     top: -1px;
     font-family: 'Bebas Neue', cursive;
     letter-spacing: 2px;

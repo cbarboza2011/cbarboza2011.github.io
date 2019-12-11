@@ -73,6 +73,15 @@ body {
   flex-grow: 1;
 }
 
+.links {
+  flex-grow: 1;
+}
+
+.pagination {
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
 .nav-link {
   width: 100%;
   text-align: center;
@@ -96,26 +105,39 @@ body {
 
 .social {
   margin: auto;
-  width: 50%;
   font-family: arial;
 }
 
+.social a {
+  width: 24%;
+  text-shadow: 1px 1px 2px #676671;
+
+}
+
 .social a:hover {
-  opacity: 0.3;
+  background: #ecebed;
+  color: #42404e;
+  text-shadow: 1px 1px 2px #a09fa6;
+
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
+  padding: 2vh;
+  font-size: 5vh;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
   background: transparent;
   color: white;
+  border-radius: 2px;
 }
 
 .email {
   font-size: 3vh;
+  max-height: 10%;
+}
+
+.navcontrol {
+  display: none;
 }
 
 .photo {
@@ -133,7 +155,7 @@ body {
   min-height: 100vh;
   color: #ecebed;
   text-shadow: 3px 3px 6px #42404e;
-  padding: 0 10%;subheader
+  padding: 0 10%;
 }
 
 .section:not(#main) {
@@ -407,19 +429,47 @@ p {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1200px) {
+  .grid-box.graphic {
+    width: 31%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid a, .grid-box.graphic{
+    width: 49%;
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .grid-box.graphic {
+    width: 49%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
 
-  body {
-    width: 100vw;
-  }
-  
   .main {
     flex-direction: column;
+    position: relative
+  }
+
+  .nav-container {
+    position: absolute;
+    align-self: stretch;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .navigation {
     height: auto;
+    flex-direction: row;
+    z-index: 1;
   }
 
   .headshot {
-    width: 50%;
+    width: 60%;
     padding: 5%;
   }
 
@@ -427,14 +477,25 @@ p {
     width: 100%;
   }
 
-  .navigation {
-    height: auto;
+  .links {
+    display: flex;
     flex-direction: row;
+    justify-content: space-space-between;
   }
 
-  .fa {
-    padding: 2px 4px;
-    font-size: 4vh
+  .pagination {
+    justify-content: space-around;
+    width: 49%;
+  }
+
+  .pagination .nav-link {
+    justify-content: flex-end;
+    padding-right: 3vh;
+
+  }
+
+  .nav-links {
+    flex-direction: column-reverse;
   }
 
   .nav-link {
@@ -443,12 +504,73 @@ p {
 
   .nav-link.email {
     flex-grow: 0;
-    padding: 1vh 0;
-    font-size: 2vh;
+    padding: 2vh 0 3vh;
+    font-size: 3vh;
   }
 
-  .grid-box.graphic, .grid a {
+  .social {
+    flex-direction: column;
     width: 49%;
+    align-items: baseline;
+    margin: 0;
+  }
+
+  .social a {
+    height: 24%;
+    padding-left: 3vh;
+  }
+
+  .social a:hover {
+    background: inherit;
+    color: #ecebed;
+  }
+
+  .fa {
+    padding: 2px 4px;
+    font-size: 4vh
+  }
+
+  h1{
+    font-size: 15vh;
+  }
+
+  .photo {
+    background-position: center;
+  }
+
+  .section:not(#main) h3 {
+    font-size: 10vh;
+    align-self: baseline;
+  }
+
+  #portfolio h4.subheader2 {
+    font-size: 6vh;
+  }
+
+  .job h4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h5 {
+    font-size: 3vh;
+  }
+
+  .subheader3 {
+    font-size: 3vh;
+    line-height: 4vh;
+  }
+
+  .grid a {
+    width: 100%;
+  }
+
+  .grid-box.graphic {
+    width: 49%
+  }
+
+  .grid-box.graphic h4 {
+    font-size: 5vh;
   }
 
   .photo-column img {
@@ -460,5 +582,19 @@ p {
     left: 48%;
     top: auto;
     right: auto;
+  }
+
+  .navcontrol {
+    display: inherit;
+    width: 100%;
+    height: 3vh;
+    background: #42404e;
+    color: #ecebed;
+    text-align: center;
+    font-size: 4vh;
+    font-weight: bold;
+    padding: 1vh 0 5vh;
+    position: relative;
+    top: -1px;
   }
 }

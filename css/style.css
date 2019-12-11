@@ -535,6 +535,7 @@ p {
 
   .photo {
     background-position: center;
+    overflow-y: inherit;
     -webkit-overflow-scrolling: touch;
   }
 

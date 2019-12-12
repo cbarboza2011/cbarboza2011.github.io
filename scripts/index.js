@@ -13,7 +13,7 @@ $(document).ready(function() {
     let $imgUrl = $(this).css('background-image');
     let $position = $imgUrl.indexOf("images/graphics/");
     $imgUrl = $imgUrl.substring($position, $imgUrl.length - 2);
-    $('.big-photo').show();
+    $('.big-photo').css('display', 'flex');
     $('.enlarged').attr('src', $imgUrl);
     $('.exit').on('click', function() {
       $('.big-photo').hide();

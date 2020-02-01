@@ -111,14 +111,10 @@ body {
 .social a {
   width: 24%;
   text-shadow: 1px 1px 2px #676671;
-
 }
 
 .social a:hover {
-  background: #ecebed;
-  color: #42404e;
-  text-shadow: 1px 1px 2px #a09fa6;
-
+  opacity: 0.3;
 }
 
 .fa {
@@ -134,6 +130,12 @@ body {
 .email {
   font-size: 3vh;
   max-height: 10%;
+}
+
+.email:hover {
+  color: rgba(236,235,237,0.3);
+  background: inherit;
+  text-shadow: 1px 1px 2px #676671;
 }
 
 .navcontrol {

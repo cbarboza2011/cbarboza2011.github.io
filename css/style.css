@@ -51,7 +51,7 @@ body {
 }
 
 .navigation {
-  min-width: 25vw;
+  width: 25vw;
   height: 100vh;
   background: #42404e;
   border-right: 1px solid #c6c5c9;
@@ -179,7 +179,8 @@ h1 {
 
 h2 {
   font-size: 5.5vh;
-  font-family: 'Podkova', serif;
+  line-height: 6vh;
+  font-family: 'Montserrat', serif;
   text-align: center;
   text-shadow: 2px 2px 4px #42404e;
 }
@@ -195,13 +196,14 @@ h4 {
 }
 
 h5 {
-  font-family: 'Podkova', serif;
+  font-family: 'Montserrat', serif;
   font-size: 3.5vh;
 }
 
 p {
-  font-family: 'Podkova', serif;
-  font-size: 24px;
+  font-family: 'Montserrat', serif;
+  font-size: 3vh;
+  letter-spacing: .01vw;
   text-indent: 5%;
   text-shadow: 2px 2px 2px #42404e;
   color: #ecebed;
@@ -215,7 +217,7 @@ p {
   margin: 0 6%;
   color: #ecebed;
   text-shadow: 2px 2px 4px #42404e;
-  line-height: 5vh;
+  line-height: 4vh;
 }
 
 #portfolio {

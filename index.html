@@ -32,21 +32,20 @@
 </head>
 <body>
 	<div class="main flex">
+		<!-- NAVIGATION -->
 		<div class="nav-container">
 			<div class="navigation flex-column">
-				<div class="headshot flex-center">
-					<img src="images/headshot-thumbnail.jpg" alt="">
-				</div>
 				<div class="nav-links flex-column">
-					<div class="links flex-column">
-						<div class="pagination flex-column">
+					<div class="links flex-column flex-center">
+						<div class="pagination flex-column flex-center">
 							<a class="nav-link" href="index.html">Main</a>
-							<a class="nav-link" href="index.html#about">About</a>
+							<a class="nav-link" href="graphicdesign.html">Graphic Art</a>
+							<a class="nav-link" href="webdesign.html">Web Design</a>
+							<a class="nav-link" href="about.html">Bio</a>
 							<a class="nav-link" href="portfolio.html">Portfolio</a>
-							<a class="nav-link" href="resume.html">Experience</a>
 							<a class="nav-link" href="photography.html">Photography</a>
 						</div>
-						<div class="social flex-center">
+						<div class="social flex">
 							<a href="https://www.facebook.com/ohsoimnancy" class="fa fa-facebook" target="_blank"></a>
 							<a href="https://twitter.com/amusemybouche_" class="fa fa-twitter" target="_blank"></a>
 							<a href="https://www.linkedin.com/in/cristianabarboza/" class="fa fa-linkedin" target="_blank"></a>
@@ -57,28 +56,45 @@
 					<a class="nav-link email" href="mailto:cbarboza2011@gmail.com">cbarboza2011@gmail.com</a>
 				</div>
 			</div>
-			<div class="navcontrol">Menu ☰</div>
+			<div class="navcontrol flex-center">☰</div>
 		</div>
+		<!-- END NAVIGATION -->
 
-		<div class="photo">
-			<div id="main"class="section flex-column flex-center">
-				<h1>Cristiana Barboza</h1>
-				<h2>Front End Web Design, Social Media Management & Graphic Design</h2>
+		<!-- MAIN -->
+		<div class="photo"></div>
+		<div class="section flex-column flexcenter">
+			<h1>Cristiana Barboza</h1>
+			<h2>Web Developer</h2>
+			<h2>Graphic Artist</h2>
+		<div class="section flex-column flex-center">
+			<div id="graphic" class="task grey flex-center flexcolumn">
+				<a href="graphicdesign.html">
+					<img src="images/graphics-graphic.svg"alt="Graphic Art">
+					<h3>Graphic Art</h3>
+					<p>High-quality vector artwork for promotionalproducts, logos, web graphics, and printedmedia.</p>
+				</a>
 			</div>
-			<div id="about" class="section flex-column flex-center">
-				<h3>About Me</h3>
-				<div class="grey">
-				<p>I'm Cristiana. I'm 26, living in Maryland and working remotely. I recently completed the Front End Web Development course at General Assembly in New York City, and am certified in HTML, CSS, and Javascript with JQuery.</p>
-				<p>I'm passionate about all things meticulous and creative, which is why I love web development. Finding ways to make things run more efficiently is my strong suit.</p>
-				<p>In my free time I like to travel, taking pictures along the way. Road trips are my favorite. My boyfriend and I have logged thousands of miles between the two of us, and we don't plan on stopping, which is why we both have jobs that allow us to work on the road. This is our dream, and we are chasing it.</p>
-				</div>
+			<div id="web" class="task grey flex-center flexcolumn">
+				<a href="websites.html">
+					<img src="images/website-graphic.svg" alt="WebDesign">
+					<h3>Web Design</h3>
+					<p>Custom-built websites with infinitepossibilities.</p>
+				</a>
 			</div>
-
-
 		</div>
 	</div>
 
-
+	<footer>
+		<div class="columns flex">
+			<div class="column column-left">
+				<p>Copyright 2023 | Cristiana Barboza</p>
+				<p>Powered by Atom, GitHub, and Netlify</p>
+			</div>
+			<div class="column column-right">
+				<p>cbarboza2011@gmail.com</p>
+			</div>
+		</div>
+	</footer>
 </body>
 
 </html>

@@ -473,6 +473,7 @@ p {
   }
 
   .navigation {
+    width: inherit;
     height: auto;
     flex-direction: row;
     z-index: 1;
